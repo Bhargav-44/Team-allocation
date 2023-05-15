@@ -7,8 +7,7 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import GroupedTeamMembers from './compnents/GroupedTeamMembers';
 import Nav from './compnents/Nav';
 import NotFound from './compnents/NotFound';
-import Charts from './compnents/Charts';
-import LoginButton from './compnents/LoginButton';
+
 
 function App() {
 
@@ -131,8 +130,7 @@ function App() {
         
             </Route>
             <Route path="/GroupedTeamMembers" element={<GroupedTeamMembers employees={employees} selectedTeam={selectedTeam} setTeam={setTeam} />}></Route>
-            <Route path="/Charts" element={<Charts/>}></Route>
-            <Route path="/LoginButton" element={<LoginButton/>}></Route>
+
             <Route path="*" element={<NotFound />}></Route>
         </Routes>
         <Footer/>
